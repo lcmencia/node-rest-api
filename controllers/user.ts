@@ -22,10 +22,12 @@ export const getUser = (req: Request, res: Response) => {
 export const postUser = (req: Request, res: Response) => {
 
     const { body } = req;
+
+    console.log(body);
     
     res.json({
-        msg: 'postUser',
-        body
+        body,
+        msg: 'postUser'
     })
 
 }
